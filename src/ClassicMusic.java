@@ -3,11 +3,9 @@ public class ClassicMusic extends MusicStyles{
         super(artist, songName, duration);
     }
 
+    @Override
     public String playMusic() {
-        return "ClaassicMusic{" +
-                "artist='" + artist + '\'' +
-                ", songName='" + songName + '\'' +
-                ", duration='" + duration + '\'' +
-                '}';
+        return String.format("Classic artist %s play their classic-song \"%s\", %s duration.",
+                this.artist, this.songName, this.duration);
     }
 }

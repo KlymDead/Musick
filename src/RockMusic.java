@@ -3,11 +3,9 @@ public class RockMusic extends MusicStyles {
         super(artist, songName, duration);
     }
 
+    @Override
     public String playMusic() {
-        return "RockMusic{" +
-                "artist='" + artist + '\'' +
-                ", songName='" + songName + '\'' +
-                ", duration='" + duration + '\'' +
-                '}';
+        return String.format("Rock Gang %s play their rock-song \"%s\", %s duration.",
+                this.artist, this.songName, this.duration);
     }
 }
